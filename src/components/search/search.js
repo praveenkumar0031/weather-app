@@ -5,9 +5,7 @@ import { geo_Api_Url, geoApiOtps } from "../../api"
 const Search = ({ onSearchChange }) => {
 
     const [search, setSearch] = useState("coimbatore");
-    require('react-dom');
-window.React2 = require('react');
-console.log(window.React1 === window.React2);
+    
     const loadOptions = async (inputValue) => {
         return fetch(`${geo_Api_Url}/cities?minPopulation=1000000&namePrefix=${inputValue}`,
             geoApiOtps
