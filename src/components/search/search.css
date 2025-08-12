@@ -1,0 +1,142 @@
+/* Search.css */
+
+/* Container styling */
+.search-container {
+  width: 100%;
+  max-width: 500px;
+  margin: 20px auto;
+  position: relative;
+  z-index: 1000; /* Very high z-index to ensure visibility */
+}
+
+/* Base styles for the AsyncPaginate component */
+.search-container div[class*="react-select"] {
+  color: #333;
+}
+
+/* Control (the main input container) */
+.search-container div[class*="control"] {
+  border-radius: 30px !important;
+  border: none !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  padding: 5px 10px !important;
+  min-height: 50px !important;
+  background: rgba(255, 255, 255, 0.9) !important;
+  transition: all 0.3s ease !important;
+}
+
+.search-container div[class*="control"]:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.15) !important;
+}
+
+.search-container div[class*="control--is-focused"] {
+  box-shadow: 0 0 0 3px rgba(0, 131, 176, 0.3), 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  border: none !important;
+}
+
+/* Input and placeholder */
+.search-container div[class*="input"] {
+  color: #333 !important;
+}
+
+.search-container div[class*="placeholder"] {
+  color: #888 !important;
+  font-size: 16px !important;
+}
+
+.search-container div[class*="input"] input {
+  font-size: 16px !important;
+  color: #333 !important;
+}
+
+/* Dropdown menu */
+.search-container div[class*="menu"] {
+  border-radius: 15px !important;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15) !important;
+  margin-top: 10px !important;
+  overflow: hidden !important;
+  background-color: white !important;
+  z-index: 1001 !important;
+  position: absolute !important;
+  width: 100% !important;
+  color: #333 !important;
+}
+
+.search-container div[class*="menu-list"] {
+  padding: 10px 0 !important;
+  max-height: 300px !important;
+  overflow-y: auto !important;
+}
+
+/* Options */
+.search-container div[class*="option"] {
+  padding: 12px 20px !important;
+  cursor: pointer !important;
+  font-size: 15px !important;
+  transition: all 0.2s ease !important;
+  color: #333 !important;
+  background-color: white !important;
+}
+
+.search-container div[class*="option"]:hover,
+.search-container div[class*="option--is-focused"] {
+  background-color: rgba(0, 180, 219, 0.1) !important;
+  color: #333 !important;
+}
+
+.search-container div[class*="option--is-selected"] {
+  background-color: #00b4db !important;
+  color: white !important;
+}
+
+/* Selected value */
+.search-container div[class*="single-value"] {
+  color: #333 !important;
+  font-size: 16px !important;
+}
+
+/* Indicators (clear, dropdown arrow) */
+.search-container div[class*="clear-indicator"] {
+  color: #888 !important;
+  cursor: pointer !important;
+  padding: 0 8px !important;
+}
+
+.search-container div[class*="clear-indicator"]:hover {
+  color: #555 !important;
+}
+
+.search-container div[class*="dropdown-indicator"] {
+  color: #00b4db !important;
+  padding: 0 8px !important;
+}
+
+.search-container div[class*="dropdown-indicator"]:hover {
+  color: #0083b0 !important;
+}
+
+.search-container div[class*="loading-indicator"] {
+  color: #00b4db !important;
+}
+
+/* Ensure no text in the component is white or transparent */
+.search-container * {
+  color: inherit;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .search-container {
+    width: 90%;
+  }
+
+  .search-container div[class*="control"] {
+    min-height: 45px !important;
+  }
+
+  .search-container div[class*="placeholder"],
+  .search-container div[class*="input"] input,
+  .search-container div[class*="single-value"] {
+    font-size: 15px !important;
+  }
+}
