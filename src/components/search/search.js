@@ -41,7 +41,7 @@ const Search = ({ onSearchChange }) => {
                 value={search}
                 onChange={handleOnChange}
                 loadOptions={loadOptions}
-                // No need for classNamePrefix with attribute selectors
+                
             />
         </div>
     );

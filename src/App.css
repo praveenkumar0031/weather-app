@@ -104,6 +104,7 @@ body {
 
 /* Search container styling - Enhanced Dark Theme */
 .search-container {
+  
   width: 100%;
   max-width: 500px;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.03) 0%, rgba(255, 255, 255, 0.08) 100%);

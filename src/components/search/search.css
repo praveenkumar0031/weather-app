@@ -30,7 +30,8 @@
 }
 
 .search-container div[class*="control--is-focused"] {
-  box-shadow: 0 0 0 3px rgba(0, 131, 176, 0.3), 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  box-shadow: 0 0 0 3px rgba(32, 124, 155, 0.3), 0 4px 12px rgba(0, 0, 0, 0.1) !important;
+  color:aliceblue !important;
   border: none !important;
 }
 
@@ -81,7 +82,7 @@
 .search-container div[class*="option"]:hover,
 .search-container div[class*="option--is-focused"] {
   background-color: rgba(0, 180, 219, 0.1) !important;
-  color: #333 !important;
+  color: white !important;
 }
 
 .search-container div[class*="option--is-selected"] {
